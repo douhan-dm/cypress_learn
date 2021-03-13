@@ -1,14 +1,5 @@
 describe('My First Tests', () => {
 
-const page_url="https://www.tut.by/"
-
-const search_field="input[id='search_from_str']"
-
-  it('Visiting Google displays the correct title', () => {
-    cy.visit(page_url)
-    cy.get(search_field).type("Лукашенко");
-    cy.get("input[class='button big']").click();
-    cy.get("dl[id='areas']").should("be.visible");
 
 
   })
