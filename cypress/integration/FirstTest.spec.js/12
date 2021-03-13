@@ -1,15 +1,15 @@
-describe('My First Tests', () => {
+описать ( 'Мои первые тесты' ,  ( )  =>  {
 
-const page_url="https://www.tut.by/"
+const  page_url = "https://www.tut.by/"
 
-const search_field="input[id='search_from_str']"
+const  search_field = "input [id = 'search_from_str']"
 
-  it('Visiting Google displays the correct title', () => {
-    cy.visit(page_url)
-    cy.get(search_field).type("Лукашенко А.Г.");
-    cy.get("input[class='button big']").click();
-    cy.get("dl[id='areas']").should("be.visible");
+  it ( 'При посещении Google отображается правильный заголовок' ,  ( )  =>  {
+    cy . посетить ( page_url )
+    cy . получить ( search_field ) . типа ( "Лукашенко" ) ;
+    cy . get ( "input [class = 'button big']" ) . click ( ) ;
+    cy . получить ( "dl [id = 'областей']" ) . должен ( "быть.видим" ) ;
 
 
-  })
-}) 
+  } )
+} )
